@@ -1,6 +1,17 @@
 # Iris Flower Prediction App
 
-This project is a web application that predicts the species of an Iris flower based on user input and visualizes the dataset using a scatter plot matrix. The app is built with Flask, Plotly, and scikit-learn.
+This project demonstrates full-stack development by integrating both front-end and back-end technologies, along with a machine learning model, to create a dynamic, interactive web application.
+
+- **Front-End**: The user interface is built using HTML and JavaScript. Users input Iris flower measurements (sepal length, sepal width, petal length, petal width) through a form, and the interface dynamically updates with the predicted flower species. Interactive data visualization is provided using **Plotly.js**, which displays a scatter plot matrix of the Iris dataset, and highlights the user's input.
+  
+- **Back-End**: The back-end is built using **Flask** (Python), which handles the requests from the front end, serves the machine learning model (trained using **scikit-learn**), and provides API endpoints (`/predict` and `/get_data`) to make predictions and serve dataset visualizations.
+
+- **Machine Learning**: A **Random Forest Classifier** is trained on the famous Iris dataset using scikit-learn. The model is saved as a `.pkl` file and is loaded by the Flask app to provide real-time predictions based on user input.
+
+- **Full-Stack Integration**: The front end and back end communicate through asynchronous HTTP requests (using `fetch`), enabling real-time interaction between the user and the server. User input is processed by the back-end model, and the result is sent back to the front end for visualization.
+
+This project is an example of how to combine client-side interaction, server-side logic, and data science to create a seamless full-stack web application.
+
 
 ## Demo
 
